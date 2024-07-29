@@ -51,7 +51,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             <li>
               <Link
                 to="/"
-                className={`text-white flex items-center rounded-md gap-2 text-xl  ${
+                className={`text-white flex items-center rounded-md gap-2 text-xl space-x-2  ${
                   isOpen ? "hover:bg-gray-700 p-2" : "justify-end p-3"
                 }`}
               >
