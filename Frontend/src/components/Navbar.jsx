@@ -38,17 +38,21 @@ const Navbar = ({ isOpen, setIsOpen }) => {
       </nav>
 
       <div
-        className={`h-screen fixed top-14 transition-transform duration-300 transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full md:-translate-x-[70%]"
+        className={`h-screen fixed  top-14 transition-transform duration-300 transform ${
+          isOpen ? "translate-x-0" : "-translate-x-full md:-translate-x-48"
         }`}
       >
-        <div className="bg-gray-800 w-64 h-full shadow-lg p-4">
-          <ul className="space-y-4">
+        <div
+          className={`bg-gray-800 w-64 h-full shadow-lg  flex flex-col ${
+            isOpen ? "p-4" : ""
+          }`}
+        >
+          <ul className={`${isOpen ? "space-y-4" : ""}`}>
             <li>
               <Link
                 to="/"
-                className={`text-white flex items-center space-x-2 p-2 rounded-md gap-2 text-xl ${
-                  isOpen ? "hover:bg-gray-700" : "justify-end"
+                className={`text-white flex items-center rounded-md gap-2 text-xl  ${
+                  isOpen ? "hover:bg-gray-700 p-2" : "justify-end p-3"
                 }`}
               >
                 <div
@@ -66,8 +70,8 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             <li>
               <Link
                 to="/login"
-                className={`text-white flex items-center space-x-2 p-2 rounded-md gap-2 text-xl ${
-                  isOpen ? "hover:bg-gray-700" : "justify-end"
+                className={`text-white flex items-center  space-x-2  rounded-md gap-2 text-xl ${
+                  isOpen ? "hover:bg-gray-700 p-2" : "justify-end p-3"
                 }`}
               >
                 <div
@@ -85,8 +89,8 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             <li>
               <Link
                 to="/signup"
-                className={`text-white flex items-center space-x-2 p-2 rounded-md gap-2 text-xl ${
-                  isOpen ? "hover:bg-gray-700" : "justify-end"
+                className={`text-white flex items-center  space-x-2  rounded-md gap-2 text-xl ${
+                  isOpen ? "hover:bg-gray-700 p-2" : "justify-end p-3"
                 }`}
               >
                 <div
@@ -104,8 +108,8 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             <li>
               <Link
                 to="/courses"
-                className={`text-white flex items-center space-x-2 p-2 rounded-md gap-2 text-xl ${
-                  isOpen ? "hover:bg-gray-700" : "justify-end"
+                className={`text-white flex items-center  space-x-2  rounded-md gap-2 text-xl ${
+                  isOpen ? "hover:bg-gray-700 p-2" : "justify-end p-3"
                 }`}
               >
                 <div
@@ -123,8 +127,8 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             <li>
               <Link
                 to="/assignments"
-                className={`text-white flex items-center space-x-2 p-2 rounded-md gap-2 text-xl ${
-                  isOpen ? "hover:bg-gray-700" : "justify-end"
+                className={`text-white flex   space-x-2  rounded-md gap-2 text-xl ${
+                  isOpen ? "hover:bg-gray-700 p-2" : "justify-end p-3"
                 }`}
               >
                 <div
@@ -144,8 +148,8 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             <li>
               <Link
                 to="/contact"
-                className={`text-white flex items-center space-x-2 p-2 rounded-md gap-2 text-xl ${
-                  isOpen ? "hover:bg-gray-700" : "justify-end"
+                className={`text-white flex items-center gap-2  space-x-2  rounded-md text-xl ${
+                  isOpen ? "hover:bg-gray-700 p-2" : "justify-end p-3"
                 }`}
               >
                 <div
